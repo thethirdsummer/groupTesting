@@ -119,7 +119,7 @@ a:link{
 	width:1225px	
 }
 .mz-header-sub-wrap li{
-	width: 10%;
+	width: 11.5%;
 	height: 150px;
 	border: 0px solid blue;
 	font-size: 10px;
@@ -128,68 +128,240 @@ a:link{
 	margin-left:5px ;
 	display: inline-block;
 }
-.mz-header-sub ul li .hd1{
+.mz-header-sub-wrap-1{
+	border: 0px solid black;
+	padding: 0;
+	height: 150px;
+	position:absolute;
+	width:1225px	
+}
+.mz-header-sub-wrap-1 li{
+	width: 13.5%;
+	height: 150px;
+	border: 0px solid blue;
+	font-size: 10px;
+	text-align: center;
+	margin-top: 0px;
+	margin-left:5px ;
+	display: inline-block;
+}
+.mz-header-sub ul li .hd1-phone{
 	border: 0px solid red;
 	height: 100px;
 	background-image: url(../img/mz-header-link-phone/meizu-16Xs.jpg);
 	background-size: 100% 100%;
 	margin:0;
 }
-.mz-header-sub ul li .hd2{
+.mz-header-sub ul li .hd2-phone{
 	border: 0px solid red;
 	height: 100px;
 	background-image: url(../img/mz-header-link-phone/meizu-16s.jpg);
 	background-size: 100% 100%;
 	margin: 0;
 }
-.mz-header-sub ul li .hd3{
+.mz-header-sub ul li .hd3-phone{
 	border: 0px solid red;
 	height: 100px;
 	background-image: url(../img/mz-header-link-phone/meizu-Note9.jpg);
 	background-size: 100% 100%;
 	margin: 0;
 }
-.mz-header-sub ul li .hd4{
+.mz-header-sub ul li .hd4-phone{
 	border: 0px solid red;
 	height: 100px;
 	background-image: url(../img/mz-header-link-phone/meizu-16th.jpg);
 	background-size: 100% 100%;
 	margin: 0;
 }
-.mz-header-sub ul li .hd5{
+.mz-header-sub ul li .hd5-phone{
 	border: 0px solid red;
 	height: 100px;
 	background-image: url(../img/mz-header-link-phone/meizu-16X.jpg);
 	background-size: 100% 100%;
 	margin: 0;
 }
-.mz-header-sub ul li .hd6{
+.mz-header-sub ul li .hd6-phone{
 	border: 0px solid red;
 	height: 100px;
 	background-image: url(../img/mz-header-link-phone/meizu-X8.jpg);
 	background-size: 100% 100%;
 	margin: 0;
 }
-.mz-header-sub ul li .hd7{
+.mz-header-sub ul li .hd7-phone{
 	border: 0px solid red;
 	height: 100px;
 	background-image: url(../img/mz-header-link-phone/meizu-Note8.jpg);
 	background-size: 100% 100%;
 	margin: 0;
 }
-.mz-header-sub ul li .hd8{
+.mz-header-sub ul li .hd8-phone{
 	border: 0px solid red;
 	height: 100px;
 	background-image: url(../img/mz-header-link-phone/meizu-15.jpg);
 	background-size: 100% 100%;
 	margin: 0;
 }
-.mz-header-sub ul li .hd9{
+.mz-header-sub ul li .hd1-voice{
 	border: 0px solid red;
 	height: 100px;
-	background-image: url(../img/mz-header-link-phone/meizu-16Xs.jpg);
+	background-image: url(../img/mz-header-link-voice/voice_1.jpg);
+	background-size: 100% 100%;
+	margin:0;
+}
+.mz-header-sub ul li .hd2-voice{
+	border: 0px solid red;
+	height: 100px;
+	background-image: url(../img/mz-header-link-voice/voice_2.jpg);
 	background-size: 100% 100%;
 	margin: 0;
+}
+.mz-header-sub ul li .hd3-voice{
+	border: 0px solid red;
+	height: 100px;
+	background-image: url(../img/mz-header-link-voice/voice_3.jpg);
+	background-size: 100% 100%;
+	margin: 0;
+}
+.mz-header-sub ul li .hd4-voice{
+	border: 0px solid red;
+	height: 100px;
+	background-image: url(../img/mz-header-link-voice/voice_4.jpg);
+	background-size: 100% 100%;
+	margin: 0;
+}
+.mz-header-sub ul li .hd5-voice{
+	border: 0px solid red;
+	height: 100px;
+	background-image: url(../img/mz-header-link-voice/voice_5.jpg);
+	background-size: 100% 100%;
+	margin: 0;
+}
+.mz-header-sub ul li .hd6-voice{
+	border: 0px solid red;
+	height: 100px;
+	background-image: url(../img/mz-header-link-voice/voice_6.jpg);
+	background-size: 100% 100%;
+	margin: 0;
+}
+.mz-header-sub ul li .hd7-voice{
+	border: 0px solid red;
+	height: 100px;
+	background-image: url(../img/mz-header-link-voice/voice_7.jpg);
+	background-size: 100% 100%;
+	margin: 0;
+}
+.mz-header-sub ul li .hd8-voice{
+	border: 0px solid red;
+	height: 100px;
+	background-image: url(../img/mz-header-link-voice/voice_8.jpg);
+	background-size: 100% 100%;
+	margin: 0;
+}
+.mz-header-sub ul li .hd1-fittings{
+	border: 0px solid red;
+	height: 100px;
+	background-image: url(../img/mz-header-link-fittings/Cgbj0VzC2w6ASUtDAAMvobH66uY340.jpg@240x240.jpg);
+	background-size: 100% 100%;
+	margin:0;
+}
+.mz-header-sub ul li .hd2-fittings{
+	border: 0px solid red;
+	height: 100px;
+	background-image: url(../img/mz-header-link-fittings/Cgbj0VugrWKAXgQoAALx033SuQ0691.png@240x240.jpg);
+	background-size: 100% 100%;
+	margin: 0;
+}
+.mz-header-sub ul li .hd3-fittings{
+	border: 0px solid red;
+	height: 100px;
+	background-image: url(../img/mz-header-link-fittings/Cgbj0VrcXw2AL0tBAApTh_xwKKk709.png@240x240.jpg);
+	background-size: 100% 100%;
+	margin: 0;
+}
+.mz-header-sub ul li .hd4-fittings{
+	border: 0px solid red;
+	height: 100px;
+	background-image: url(../img/mz-header-link-fittings/Cgbj0FqYqxqAcZ-nAAGaLqkN71s729.png@240x240.jpg);
+	background-size: 100% 100%;
+	margin: 0;
+}
+.mz-header-sub ul li .hd5-fittings{
+	border: 0px solid red;
+	height: 100px;
+	background-image: url(../img/mz-header-link-fittings/1458617159-29477.png@240x240.jpg);
+	background-size: 100% 100%;
+	margin: 0;
+}
+.mz-header-sub ul li .hd6-fittings{
+	border: 0px solid red;
+	height: 100px;
+	background-image: url(../img/mz-header-link-fittings/1467170145-52479.png@240x240.jpg);
+	background-size: 100% 100%;
+	margin: 0;
+}
+.mz-header-sub ul li .hd7-fittings{
+	border: 0px solid red;
+	height: 100px;
+	background-image: url(../img/mz-header-link-fittings/Cgbj0VwkSZKATjTlAAajD8PGNhs208.png@240x240.jpg);
+	background-size: 100% 100%;
+	margin: 0;
+}
+.mz-header-sub ul li .hd8-fittings{
+	border: 0px solid red;
+	height: 100px;
+	background-image: url(../img/mz-header-link-fittings/Cgbj0Ft7iV6AQANcAAL00J0tbyQ152.png@240x240.jpg);
+	background-size: 100% 100%;
+	margin: 0;
+}
+.mz-header-sub ul li .hd1-life{
+	border: 0px solid red;
+	height: 100px;
+	background-image: url(../img/mz-header-link-life/Cgbj0VzvODSALJ3OAA3y2fvxTuA532.png@240x240.jpg);
+	background-size: 100% 100%;
+	margin:0;
+}
+.mz-header-sub ul li .hd2-life{
+	border: 0px solid red;
+	height: 100px;
+	background-image: url(../img/mz-header-link-life/Cgbj0FzvOLqASrUfAAksP05vyhs545.png@240x240.jpg);
+	background-size: 100% 100%;
+	margin: 0;
+}
+.mz-header-sub ul li .hd3-life{
+	border: 0px solid red;
+	height: 100px;
+	background-image: url(../img/mz-header-link-life/Cgbj0Vy9J36ARuB2AAVQph9X9vs749.png@240x240.jpg);
+	background-size: 100% 100%;
+	margin: 0;
+}
+.mz-header-sub ul li .hd4-life{
+	border: 0px solid red;
+	height: 100px;
+	background-image: url(../img/mz-header-link-life/1465698264-58364.jpg@240x240.jpg);
+	background-size: 100% 100%;
+	margin: 0;
+}
+.mz-header-sub ul li .hd5-life{
+	border: 0px solid red;
+	height: 100px;
+	background-image: url(../img/mz-header-link-life/CnQOjVjJ-m2AQ1LxAAE3Ze4d72s837.png@240x240.jpg);
+	background-size: 100% 100%;
+	margin: 0;
+}
+.mz-header-sub ul li .hd6-life{
+	border: 0px solid red;
+	height: 100px;
+	background-image: url(../img/mz-header-link-life/Cgbj0Vqwv3SAKEs9AAeZO9uMlbg447.png@240x240.jpg);
+	background-size: 100% 100%;
+	margin: 0;
+}
+.mz-header-sub .hd9{
+	border: 0px solid red;
+	height: 200px;
+	background-image: url(../img/mz-header-link/935524fa-9d0b-420b-a485-105974823f40.jpg);
+	background-size: 100% 100%;
+	margin: 0;
+	padding: 0;
 }
 .mz-header-sub ul li .title{
 	border: 0px solid red;
@@ -256,7 +428,7 @@ a:link{
 					margin-left: -3750px;
 				}
 				100%{
-					margin-left: -5000px;
+					margin-left: -5020px;
 				}
 			}	
 .lb_div img{
@@ -418,6 +590,10 @@ a:link{
 	margin-left: 30%;
 	margin-top: 25px;
 	border: 0px solid black;
+}
+.product-type li img:hover{
+	top:-20px;
+	position: relative;
 }
 .service-title span{
 	text-align: center;
