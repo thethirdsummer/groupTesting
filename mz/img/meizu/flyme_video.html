@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="screen-orientation" content="portrait">
+<meta name="x5-orientation" content="portrait">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="keywords" content="魅族,Flyme,Flyme官网,Flyme 6,Flyme更新,Flyme升级,Flyme固件,Flyme固件下载">
+<meta name="description" content="最新最全的Flyme固件更新；Flyme软件商店提供海量应用供用户下载；Flyme云服务提供用户帐号与数据管理服务；Flyme论坛为用户提供沟通交流平台；品牌窗口展示最新的Flyme资讯。">
+<link href="//www-res.flyme.cn/resources/flymeos/v4/assets/common/favicon.ico" rel="shortcut icon">
+<title>Flyme官网-视频</title>
+    <link rel="stylesheet" href="//www-res.flyme.cn/resources/flymeos/v4/css/flyme_video.css">
+    <!--[if lte IE 9]>
+    <script type="text/javascript" src="//www-res.flyme.cn/resources/flymeos/v4/js/lib/modernizr/modernizr.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="//www-res.flyme.cn/resources/flymeos/v4/js/lib/video/video.js"></script>
+    <!--[if lte IE 9]>
+    <script type="text/javascript">videojs.options.flash.swf = "//www-res.flyme.cn/resources/flymeos/v4/assets/video-js.swf";</script>
+    <![endif]-->
+</head>
+<body>
+    <h1 class="text-hide">视频</h1>
+    <!--[if lte IE 9]>
+<style type="text/css">
+    /********兼容提示样式********/
+    .browser-upgrade{width:100%;height:40px;line-height:40px;position:fixed;z-index:100;top:0;left:0;text-align:center;font-size:1em;border:1px solid #d1eefa;background:#eaf8fe;}
+    .browser-upgrade__icon{color:red;margin-right:3px;}
+    .browser-upgrade__close{width:40px;height:40px;font-size:1.2em;position:absolute;top:0;right:0;font-weight:normal;color:#91c8de;}
+    .browser-upgrade__link{text-decoration: underline;padding:0 10px;}
+</style>
+<div class="browser-upgrade" id="browserUpgrade"><span class="iconflyme browser-upgrade__icon">&#xe614;</span>你的浏览器版本过低，请到<a href="http://browsehappy.com" class="browser-upgrade__link">这里</a>更新，以获取最佳体验!<a href="javascript:closeBrowserUpgrade();" class="browser-upgrade__close">╳</a></div>
+<script type="text/javascript">
+    function closeBrowserUpgrade(){
+        var alertO=document.getElementById('browserUpgrade');
+        alertO.style.display='none';
+    }
+</script>
+<![endif]-->
+    <div class="container container-gray" ms-controller="video">
+        <!-- 头部导航 S-->
+        <div class="header header-abs" ms-controller="header">
+    <div class="header-con header-con__pc">
+        <a class="main-logo fl" ms-css="{color:@logoColor}" href="index.html" title="Flyme官网"><span class="iconflyme">&#xe63f;</span></a>
+        <div class="main-nav main-nav__pc fr">
+            <a href="javascript:void(0);" ms-css="{color:@navColor}" ms-for="link in @headerList" class="main-nav__link fl" ms-attr="{title:link.title, href:link.nav_url, target:link.target ? '_blank' : '','data-bh':link.databh?link.databh:''}" ms-if="link.status" ms-text="link.title"></a>
+        </div>
+    </div>
+    <div class="header-con header-con__mobile" ms-class="@mobileActive ? 'header-con__mobile--active' : ''">
+        <a class="main-logo fl" ms-css="{color:@navColor}" href="index.html" title="Flyme官网"><span class="iconflyme">&#xe63f;</span></a>
+        <a class="main-nav__icon fr" href="javascript:void(0);" ms-click="@toggleMobileNav"><span ms-visible="!@mobileActive"  class="iconflyme nav-icon__open">&#xe643;</span><span  ms-visible="@mobileActive" class="iconflyme nav-icon__close">&#xe632;</span></a>
+        <div class="main-nav main-nav__mobile" ms-class="@mobileClass" ms-visible="@mobileActive">
+            <a href="javascript:void(0);" ms-for="link in @headerListMobile" class="main-nav__link fl" ms-attr="{title:link.title, href:link.nav_url, target:link.target ? '_blank' : '','data-bh':link.databh?link.databh:''}" ms-css="{'transition-delay':link.sort*100+'ms'}" ms-if="link.status" ms-text="link.title"></a>
+        </div>
+    </div>
+</div>
+        <!-- 头部导航 E-->
+        <!-- 了解Flyme S-->
+        <div class="flyme-con flyme-video">
+            <h3 class="flyme-con main-title__video">视频</h3>
+            <div class="flyme-video__con">
+                <a ms-for="hot in hotVideo" href="javascript:void(0);" ms-attr="{'title':hot.title,'data-video-url':hot.video.url,'data-bh':hot.databh?hot.databh:''}" class="fl flyme-video__link flyme-video__link--max">
+                    <div class="img-padding video-padding__max"></div>
+                    <picture>
+                        <source media="(max-width: 780px)" ms-attr="{srcset:hot.img_mb}">
+                        <source media="(min-width: 780px)" ms-attr="{srcset:hot.img1+' ,'+hot.img2+' 2x'}">
+                        <img ms-attr="{src:hot.img1}" class="video-link__img"/>
+                    </picture>
+                    <div class="mask">
+                        <div class="mask-con mask-con__max">
+                            <picture>
+                                <source media="(max-width: 780px)" srcset="//www-res.flyme.cn/resources/flymeos/v4/assets/common/playicon.png">
+                                <source media="(min-width: 780px)" srcset="//www-res.flyme.cn/resources/flymeos/v4/assets/common/playicon.png ,//www-res.flyme.cn/resources/flymeos/v4/assets/common/playicon@2x.png 2x">
+                                <img src="//www-res.flyme.cn/resources/flymeos/v4/assets/common/playicon.png" class="mask-play mask-play__max"/>
+                            </picture>
+                            <p class="mask-title mask-title__max" ms-text="hot.title"></p>
+                        </div>
+                    </div>
+                </a>
+                <div class="flyme-video__other">
+                    <a href="javascript:void(0);" ms-for="(index,other) in otherVideo"  ms-attr="{'title':other.title,'data-video-url':other.video.url,'data-bh':other.databh?other.databh:''}" class="lb flyme-video__link flyme-video__link--other" ms-class="['flyme-video__link--other'+index]">
+                        <div class="img-padding video-padding"></div>
+                        <picture>
+                            <source media="(max-width: 780px)" ms-attr="{srcset:other.img_mb}">
+                            <source media="(min-width: 780px)" ms-attr="{srcset:other.img1+' ,'+other.img2+' 2x'}">
+                            <img ms-attr="{src:other.img1}" class="video-link__img"/>
+                        </picture>
+                        <div class="mask">
+                            <div class="mask-con">
+                                <picture>
+                                    <source media="(max-width: 780px)" srcset="//www-res.flyme.cn/resources/flymeos/v4/assets/common/playicon.png">
+                                    <source media="(min-width: 780px)" srcset="//www-res.flyme.cn/resources/flymeos/v4/assets/common/playicon.png ,//www-res.flyme.cn/resources/flymeos/v4/assets/common/playicon@2x.png 2x">
+                                    <img src="//www-res.flyme.cn/resources/flymeos/v4/assets/common/playicon.png" class="mask-play"/>
+                                </picture>
+                                <p class="mask-title" ms-text="other.title"></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- 了解Flyme E-->
+
+        <!--底部导航-->
+        <div class="footer" ms-controller="footer">
+  <div class="footer-con footer-con__pc clear-float">
+    <div class="footer-con__link clear-float">
+      <div class="footer-nav fl">
+        <p class="footer-link lb">
+          <a
+            ms-for="footerNav in footerList"
+            class="footer-link__item"
+            ms-text="footerNav.title"
+            ms-attr="{href:footerNav.nav_url,title:footerNav.title,target:footerNav.target === 0 ? '' : '_blank','data-bh':footerNav.databh?footerNav.databh:''}"
+          ></a>
+          <sapn class="footer-link__separate">|</sapn>
+        </p>
+        <div class="language-link lb">
+          <a href="javascript:void(0);" class="language-link__item"
+            ><span class="country-icon"><img src="//www-res.flyme.cn/resources/flymeos/v4/assets/common/ch_icon.png" alt=""/></span
+            ><span class="country-name">简体中文</span><span class="iconflyme">&#xe629;</span></a
+          >
+          <div class="language-list">
+            <a href="javascript:void(0);" class="language-link__item language-link__active"
+              ><span class="country-icon"><img src="//www-res.flyme.cn/resources/flymeos/v4/assets/common/ch_icon.png"/></span
+              ><span class="country-name">简体中文</span></a
+            >
+            <a href="http://www.flymeos.com/hk/" target="_blank" class="language-link__item"
+              ><span class="country-icon"><img src="//www-res.flyme.cn/resources/flymeos/v4/assets/common/hk_icon.png"/></span
+              ><span class="country-name">繁体中文</span></a
+            >
+            <a href="http://www.flymeos.com/ru/" target="_blank" class="language-link__item"
+              ><span class="country-icon"><img src="//www-res.flyme.cn/resources/flymeos/v4/assets/common/ru_icon.png"/></span
+              ><span class="country-name">Русский</span></a
+            >
+            <a href="http://www.flymeos.com/" target="_blank" class="language-link__item"
+              ><span class="country-icon"><img src="//www-res.flyme.cn/resources/flymeos/v4/assets/common/en_icon.png"/></span
+              ><span class="country-name">English</span></a
+            >
+            <!--
+              <a href="http://www.flymeos.com/in/" target="_blank" class="language-link__item"><span class="country-icon"><img src="//www-res.flyme.cn/resources/flymeos/v4/assets/common/in_icon.png"></span><span class="country-name">हिन्दी</span></a>
+            -->
+          </div>
+        </div>
+      </div>
+      <div class="service-con fl">
+        <p class="service-con__detail">
+          <span class="service-con__tel">客户热线：400-788-3333</span
+          ><a
+            href="javascript:void(0);"
+            onclick="window.open('https://mwx-api.meizu.com/live-service','_blank','height=760,width=1160,fullscreen=3,top=100,left=100,status=yes,toolbar=no,menubar=no,resizable=no,scrollbars=no,location=no,titlebar=no,fullscreen=no');"
+            class="service-link"
+            >在线客服</a
+          >
+        </p>
+      </div>
+      <div class="flyme-platform fr">
+        <a href="http://www.weibo.com/meizuflyme" target="_blank" class="flyme-platform__item"
+          ><span class="iconflyme iconflyme-wb">&#xe63c;</span>官方微博</a
+        >
+        <a href="javascript:void(0);" class="flyme-platform__item flyme-platform__item--wx"
+          ><span class="iconflyme iconflyme-wx">&#xe63d;</span>微信公众号<img
+            src="//www-res.flyme.cn/resources/flymeos/v4/assets/common/wechat-qrcode2x.png"
+            class="wx-qrcode"
+        /></a>
+      </div>
+    </div>
+    <div class="footer-con__copyright">
+      <span class="copyright-item copyright-item__mr">©2018 Meiwang Technology Co., Ltd. All rights reserved.</span>
+      <a class="copyright-item copyright-item__mr" target="_blank" href="http://www.miitbeian.gov.cn/"
+        >备案号：粤ICP备16039921号-2</a
+      >
+      <a
+        class="copyright-item copyright-item__mr"
+        target="_blank"
+        href="//www-res.flyme.cn/resources/flymeos/images/icp2017.jpg"
+        >经营许可证编号：粤B2-20170003</a
+      >
+      <a
+        class="copyright-item copyright-item__mr"
+        target="_blank"
+        href="http://www2.res.meizu.com/zh_cn/images/common/com_licence.jpg"
+        >营业执照</a
+      >
+      <a class="copyright-item copyright-item__mr" target="_blank" href="/agreement">用户协议</a>
+      <a
+        class="copyright-item"
+        target="_blank"
+        href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44049102496076"
+        ><img src="//www-res.flyme.cn/resources/flymeos/v4/assets/common/ghs.png" class="public-network__logo" /><span class="public-network__number"
+          >粤公网安备 44049102496076号</span
+        ></a
+      >
+    </div>
+  </div>
+  <div class="footer-con footer-con__mobile">
+    <div class="footer-con__link">
+      <div class="flyme-footer">
+        <div class="flyme-footer__link flyme-footer__link--first">
+          <a href="javascript:void(0);" class="flyme-platform__item flyme-platform__item--wx"
+            ><span class="iconflyme">&#xe63a;</span
+            ><span class="flyme-footer__name">微信公众号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+            ><img src="//www-res.flyme.cn/resources/flymeos/v4/assets/common/wechat-qrcode2x.png" class="wx-qrcode"
+          /></a>
+          <span class="separate-footer">|</span>
+          <a href="http://www.weibo.com/meizuflyme" class="flyme-platform__item"
+            ><span class="iconflyme">&#xe63b;</span><span class="flyme-footer__name">新浪微博</span></a
+          >
+        </div>
+        <div class="flyme-footer__link">
+          <a href="tel:4007883333" class="flyme-platform__item"
+            ><span class="iconflyme">&#xe638;</span><span class="flyme-footer__name">400-788-3333</span></a
+          >
+          <span class="separate-footer">|</span>
+          <a
+            href="javascript:void(0);"
+            onclick="window.open('https://mwx-api.meizu.com/live-service','_blank','height=760,width=1160,fullscreen=3,top=100,left=100,status=yes,toolbar=no,menubar=no,resizable=no,scrollbars=no,location=no,titlebar=no,fullscreen=no');"
+            class="flyme-platform__item"
+            ><span class="iconflyme">&#xe639;</span><span class="flyme-footer__name">在线客服</span></a
+          >
+        </div>
+        <div class="flyme-footer__link flyme-footer__link--language">
+          <a href="javascript:void(0);" class="flyme-platform__item"
+            ><span class="country-icon"><img src="//www-res.flyme.cn/resources/flymeos/v4/assets/common/ch_icon.png" alt=""/></span
+            ><span class="country-name">简体中文&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></a
+          >
+          <a href="javascript:void(0);" class="flyme-platform__item"
+            ><span class="country-name flyme-platform__arrow"
+              >简体中文&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+            ><span class="iconflyme">&#xe629;</span></a
+          >
+          <div class="language-list">
+            <a href="javascript:void(0);" class="language-link__item language-link__active"
+              ><span class="country-icon"><img src="//www-res.flyme.cn/resources/flymeos/v4/assets/common/ch_icon.png"/></span
+              ><span class="country-name">简体中文</span></a
+            >
+            <a href="http://www.flymeos.com/hk/" target="_blank" class="language-link__item"
+              ><span class="country-icon"><img src="//www-res.flyme.cn/resources/flymeos/v4/assets/common/hk_icon.png"/></span
+              ><span class="country-name">繁体中文</span></a
+            >
+            <a href="http://www.flymeos.com/ru/" target="_blank" class="language-link__item"
+              ><span class="country-icon"><img src="//www-res.flyme.cn/resources/flymeos/v4/assets/common/ru_icon.png"/></span
+              ><span class="country-name">Русский</span></a
+            >
+            <a href="http://www.flymeos.com/" target="_blank" class="language-link__item"
+              ><span class="country-icon"><img src="//www-res.flyme.cn/resources/flymeos/v4/assets/common/en_icon.png"/></span
+              ><span class="country-name">English</span></a
+            >
+            <!--
+              <a href="http://www.flymeos.com/in/" target="_blank" class="language-link__item"><span class="country-icon"><img src="//www-res.flyme.cn/resources/flymeos/v4/assets/common/in_icon.png"></span><span class="country-name">हिन्दी</span></a>
+            -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-con__copyright footer-con__copyright--mobile">
+      <span class="copyright-item copyright-item__mr">©2018 Meiwang Technology Co., Ltd. All rights reserved.</span>
+      <a class="copyright-item copyright-item__mr" target="_blank" href="http://www.miitbeian.gov.cn/"
+        >备案号：粤ICP备16039921号-2</a
+      ><br />
+      <a
+        class="copyright-item copyright-item__mr"
+        target="_blank"
+        href="//www-res.flyme.cn/resources/flymeos/images/icp2017.jpg"
+        >经营许可证编号：粤B2-20170003</a
+      >
+      <a
+        class="copyright-item copyright-item__mr"
+        target="_blank"
+        href="http://www2.res.meizu.com/zh_cn/images/common/com_licence.jpg"
+        >营业执照</a
+      ><br />
+      <a
+        class="copyright-item copyright-item__mr"
+        target="_blank"
+        href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44049102496076"
+        >粤公网安备 44049102496076号</a
+      >
+      <a class="copyright-item copyright-item__mr" target="_blank" href="/agreement">用户协议</a>
+      <a class="copyright-item" target="_blank" href="/app.html">应用公示</a>
+    </div>
+  </div>
+</div>
+
+
+        <div class="flyme-win video-win">
+    <div class="flyme-win__con">
+        <div class="flyme-win__conin">
+            <video id="flyme_video" class="video-js vjs-default-skin vjs-big-play-centered"
+                   controls preload="none" width="960" height="540" poster="">
+                <source src="" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <p class="mobile-video__tips">由于视频文件较大，移动端建议在wifi下观看!</p>
+    <a class="iconflyme flyme-win__close" data-close-btn href="javascript:void(0);">&#xe632;</a>
+</div>
+
+    </div>
+    <script type="text/javascript" src="//www-res.flyme.cn/resources/flymeos/v4/js/lib/jquery/jquery.min.js"></script>
+    <!--[if lte IE 9]>
+    <script type="text/javascript" src="//www-res.flyme.cn/resources/flymeos/v4/js/lib/jquery-xdomainrequest/jquery.xdomainrequest.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="//www-res.flyme.cn/resources/flymeos/v4/js/lib/avalon/avalon.min.js"></script>
+    <script type="text/javascript" src="//www-res.flyme.cn/resources/flymeos/v4/js/lib/config/config.js"></script>
+    <script type="text/javascript" src="//www-res.flyme.cn/resources/flymeos/v4/js/flyme_video.js"></script>
+    <script type="text/javascript">
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?4c3fc7988919c305281f40b8e5718546";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+      (function() {
+        var ga = document.createElement('script'), s;
+        ga.type = 'text/javascript';
+        ga.src = ('https:' == document.location.protocol ? 'https://tongji-res.meizu.com' : 'http://tongji-res1.meizu.com') + '/resources/tongji/flow.js';
+        s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+</body>
+</html>
