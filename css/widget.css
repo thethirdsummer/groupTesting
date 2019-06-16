@@ -1,0 +1,81 @@
+/*!/static/global/_var.scss*/
+.address-popup-choose{
+	display:none;
+	z-index:10000;
+	width:100%;
+	height:100%;
+	background-color:#f7f7f7;
+	position:absolute;
+	top:0;left:0;
+	overflow:hidden}
+.address-popup-choose.actived{
+	display:block;
+	}
+.address-popup-choose .title{
+	position:relative;
+	padding:16px 20px;
+	text-align:center;
+	color:#999;
+	font-size:20px;
+	border-bottom:1px solid #e4e4e4;
+	background-color:#fff;z-index:100}
+.address-popup-choose .title span{
+	color:#666;margin-right:10px;
+	}
+	
+.address-popup-choose .title .icon-close{
+	position:absolute;
+	cursor:pointer;
+	left:20px;top:14px;
+	width:40px;
+	height:40px;
+	background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZBAMAAAA2x5hQAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAnUExURQAAAAy87wy87wy87wy87wy87wy87wy87wy87wy87wy87wy87wy876Z2BX8AAAAMdFJOUwDPFBP7Mr4oJ7+90B4bGRoAAACESURBVBjTTc6tEYAwDAbQ78oG1CKowWDAMgMChUCxAncMAHt0Ge4YDJImTSvaNO/yg22AnmlB9Pqpmh39ozg+LVzjler/DoJEUEykGJgEnVBCJUYjwjsT4WwEnO+F0jyKusPq/oZFT5qV53E+Y0oLSlYereA3F3Bgy1MUaxu7Y7Xlu+UDkSUfFN0HYh4AAAAASUVORK5CYII=") center no-repeat;background-size:20px
+	}
+.address-popup-choose .address-list{
+	width:100%;
+	height:100%;
+	overflow:scroll;
+	background-color:#fff;
+	font-size:20px;
+	box-sizing:border-box;
+	padding-top:63px;
+	margin-top:-63px;
+	}
+.address-popup-choose .address-list li{
+	position:relative;
+	padding:16px 20px;
+	}
+.address-popup-choose .address-list li:last-child{
+	border-bottom:0;
+	}
+.address-popup-choose .address-list>li{
+	border-bottom:1px solid #e4e4e4;
+	}
+.address-popup-choose .address-list>li.active{
+	background-color:#fafafa;
+	}
+.address-popup-choose .address-list>li.active::after{
+	transform:rotateZ(135deg);
+	}
+.address-popup-choose .address-list>li::after{
+	position:absolute;
+	content:'';
+	right:24px;
+	top:24px;
+	width:14px;
+	height:14px;
+	border-top:1px solid #999;
+	border-right:1px solid #999;
+	transform:rotateZ(45deg);
+	}
+.address-popup-choose .city-list{
+	display:none;padding-top:16px;
+	}
+.address-popup-choose .city-list li{
+	background-color:#fafafa;
+	color:#666;
+	border-top:1px solid #e4e4e4;
+	}
+.address-popup-choose .city-list li:last-child{
+	padding-bottom:0;
+	}

@@ -1,0 +1,95 @@
+
+.widget-map{
+	height:100%;
+	width:100%;
+	position:relative;
+	z-index:999;
+	}
+.widget-map .map-location{
+	position:absolute;
+	top:23px;
+	right:37px;
+	z-index:99;
+	}
+.widget-map .map-location a{
+	float:left;
+	width:72px;
+	height:39px;
+	background-color:#fff;
+	border:#e8e8e8 1px solid;
+	}
+.widget-map .map-location i{
+	width:23px;
+	height:23px;
+	display:block;
+	background:url(img/meizu/map_icons_7ec233d.png) no-repeat;
+	margin:8px 0 0 25px;
+	}
+.widget-map .map-location .map-large i{
+	background-position:0 -1px;
+	}
+.widget-map .map-location .map-small{
+	border-left:0;
+	}
+.widget-map .map-location .map-small i{
+	background-position:-30px -1px;
+	}
+.widget-map .map-location .map-my-location{
+	width:39px;
+	height:39px;
+	margin-left:13px;
+	}
+.widget-map .map-location .map-my-location i{
+	margin:8px 0 0 9px;
+	background-position:-60px -2px;
+	}
+.widget-map .map_shop_area{
+	position:relative;
+	width:341px;
+	height:100px;
+	border:1px solid #d4d2c2;
+	box-shadow:1px 1px 3px #d7d5d3;
+	margin-bottom:12px;
+	}
+.widget-map .map_shop_area .map_sa_par{
+	position:relative;
+	top:0;width:100%;
+	height:100%;
+	}
+.widget-map .map_shop_area .map_sa_bg{
+	position:absolute;
+	top:0;width:100%;
+	height:100%;
+	z-index:2;
+	background-color:#fff;
+	opacity:.9;
+	filter:alpha(opacity=90);
+	}
+.widget-map .map_shop_area .map_sa_content{
+	position:absolute;
+	top:0;width:100%;
+	height:100%;
+	z-index:3;
+	}
+.widget-map .map_shop_area i{
+	float:left;
+	width:71px;
+	height:13px;
+	margin:42px 20px 0 22px;
+	display:inline;
+	}
+.widget-map .map_shop_area .map_sa_note{
+	float:left;
+	width:220px;
+	padding-top:26px;
+	}
+.widget-map .map_shop_area .map_arrow{
+	position:absolute;
+	bottom:-8px;
+	left:162px;
+	background:url(img/meizu/map_icons_7ec233d.png) -94px -1px;
+	width:14px;
+	height:9px;
+	z-index:9;
+	overflow:hidden;
+	}

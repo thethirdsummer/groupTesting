@@ -1,0 +1,415 @@
+    * {
+            margin: 0;
+            padding: 0;
+            font-family: "Microsoft yahei";
+        }
+
+        body {
+            background: #fff;
+            font-family: Helvetica, Tahoma, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", STXihei, "Microsoft YaHei", SimHei, "WenQuanYi Micro Hei";
+        }
+
+        .bgmax {
+            width: 100%;
+            /* height: 760px; */
+            /* background: url("img/bg.jpg") center no-repeat; */
+            min-width: 1080px;
+        }
+
+        .top {
+            width: 100%;
+            height: 80px;
+            transition: 0.5s;
+            background-color: #ccc;
+            position: relative;
+            /* 过度效果 */
+        }
+
+        .nav {
+            width: 1080px;
+            height: 80px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            width: 112px;
+            height: 20px;
+            float: left;
+            margin: 30px 350px 0 20px;
+        }
+
+        .main li {
+            list-style: none;
+            float: left;
+        }
+
+        .main ul li a {
+            padding: 30px 23px;
+            color: #fff;
+            font-size: 14px;
+            text-decoration: none;
+            display: block;
+            /* letter-spacing: 1px; */
+        }
+
+        .login {
+            color: #fff;
+            width: 65px;
+            height: 15px;
+            float: right;
+            margin: 32px 20px 0 0;
+            font-size: 12px;
+        }
+
+        .login a {
+            line-height: 15px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .main ul li:hover a,
+        .login a:hover {
+            color: #31a5e7;
+        }
+
+        .hid {
+            width: 100%;
+            height: 0px;
+            position: absolute;
+            top: 80px;
+            left: 0px;
+            overflow: hidden;
+            transition: background .5s;
+            /* 动画过渡效果 */
+        }
+
+        .hid .mid {
+            width: 580px;
+            height: 150px;
+            margin: 0 auto;
+            padding-left: 500px;
+        }
+
+        .hid .mid img {
+            margin-right: 50px;
+            opacity: .5;
+        }
+
+        .hid .mid img:hover {
+            opacity: 1;
+        }
+
+        .bannerimg {
+            width: 1080px;
+            height: 450px;
+            margin-left: 75px;
+            /* position: relative; */
+            overflow: hidden;
+            /* background-color: #000; */
+            /* background: url(./img/banner2.jpg);
+            background-size: auto;
+            background-position: center 0; */
+
+        }
+
+        .bannerimg img {
+            width: 1080px;
+            height: 450px;
+        }
+
+
+        /*初始化页面*/
+        /* .CarouselBox {
+            width: 800px;
+            height: 600px;
+            margin: 100px auto;
+            overflow: hidden;
+        } */
+
+        /*设置放置轮播图的盒子*/
+        /* li {
+            width: 800px;
+            height: 600px;
+            float: left;
+            list-style: none;
+        } */
+
+        /*对放置图片的li进行设置*/
+
+        /*设置动画的主要属性*/
+        .bannerimg ul {
+            width: 4320px;
+            /* margin-top: 80px; */
+            /* height: 450px; */
+            animation: myani 10s 0s alternate ease-in-out infinite;
+            -ms-animation: myani 10s 0s alternate ease-in-out infinite;
+            -moz-animation: myani 10s 0s alternate ease-in-out infinite;
+            -webkit-animation: myani 10s 0s alternate ease-in-out infinite;
+
+        }
+
+
+
+        /* 对动画的关键帧进行设置*/
+        @keyframes myani {
+            0% {
+                margin-left: 0px;
+            }
+
+            33% {
+                margin-left: -1080px;
+            }
+
+            66% {
+                margin-left: -2160px;
+            }
+
+            100% {
+                margin-left: -3240px;
+            }
+
+            /* 100% {
+                margin-left: -4320px;
+            } */
+
+
+        }
+
+        /*对动画的关键帧进行兼容处理*/
+        @-webkit-keyframes myani {
+            0% {
+                margin-left: 0px;
+            }
+
+            33% {
+                margin-left: -1080px;
+            }
+
+            66% {
+                margin-left: -2160px;
+            }
+
+            100% {
+                margin-left: -3240px;
+            }
+
+        }
+
+        @-moz-keyframes myani {
+            0% {
+                margin-left: 0px;
+            }
+
+            33% {
+                margin-left: -1080px;
+            }
+
+            66% {
+                margin-left: -2160px;
+            }
+
+            100% {
+                margin-left: -3240px;
+            }
+        }
+
+        @-ms-keyframes myani {
+            0% {
+                margin-left: 0px;
+            }
+
+            33% {
+                margin-left: -1080px;
+            }
+
+            66% {
+                margin-left: -2160px;
+            }
+
+            100% {
+                margin-left: -3240px;
+            }
+        }
+
+        .bannerimg ul {
+            /* overflow: hidden; */
+            /* position: relative; */
+        }
+
+        .bannerimg li {
+            list-style: none;
+            float: left;
+
+
+        }
+
+        .mainbox {
+            width: 100%;
+            height: 1947px;
+            /* background-color: #000; */
+        }
+
+        .containbox {
+            width: 1240px;
+            height: 1780px;
+            background-color: #fff;
+            margin: 0 140px;
+        }
+
+        .loadicon {
+            width: 1240px;
+            height: 214px;
+            /* background-color: pink; */
+            text-align: center;
+            margin-left: -22px;
+            margin-top: 15px;
+        }
+
+        .loadicon img {
+            width: 190px;
+            height: 210px;
+            margin-left: 30px;
+            cursor: pointer;
+        }
+
+        .loadicon img:hover {
+            box-shadow: 2px 4px 6px #ccc;
+        }
+
+        .mediabox {
+            margin-top: 20px;
+            width: 1240px;
+            height: 290px;
+            /* background-color: #ccc; */
+        }
+
+        /* .loadiconimg {
+            width: 190px;
+            height: 210px;
+        } */
+        .rightImg {
+            width: 605px;
+            height: 290px;
+            background-color: #fff;
+            background: url(./img/videobg.png);
+            background-size: cover;
+            float: left;
+            cursor: pointer;
+
+
+        }
+
+        .rightImg :hover {
+            /* background-color: #ccc; */
+            box-shadow: 1px 1px 1px #ccc;
+        }
+
+        .leftImg {
+            width: 605px;
+            height: 290px;
+            background-color: #fff;
+            float: right;
+
+        }
+
+        .leftimgbox {
+            width: 300px;
+            height: 140px;
+            background-color: pink;
+            float: left;
+
+        }
+
+        .leftimgbox img:hover {
+            box-shadow: 2px 4px 6px #ccc;
+        }
+
+        .left1 {
+            background: url(./img/rightimg3.png);
+            margin-right: 5px;
+        }
+
+        .left3 {
+            margin-top: 5px;
+            background: url(./img/rightimg2.png);
+            margin-right: 5px;
+        }
+
+        .left4 {
+            margin-top: 5px;
+            background: url(./img/rightimg1.jpg);
+        }
+
+        /* .left1 {
+            margin-right:3px;
+            margin-bottom:3px;
+        }
+        .left4 {
+            margin-left:2px;
+            margin-top:2px;
+        } */
+        .main-title {
+            text-align: center;
+            font-size: 1.5em;
+            line-height: 4.25em;
+            color: #000;
+            font-weight: 500;
+        }
+
+        .flymeimg {
+            width: 603px;
+            height: 269px;
+
+            background: url(./img/flyme7.png);
+            background-size: cover;
+            float: left;
+        }
+
+        .littefly {
+            width: 286px;
+            height: 270px;
+            background-color: #fff;
+            float: left;
+        }
+
+        .recent-news__title {
+            width: 100%;
+            margin-top: 10px;
+            text-align: center;
+            font-size: 1.2em;
+            line-height: 1em;
+            color: #333;
+        }
+
+        .flyimgbox {
+            margin-right: 20px;
+        }
+
+        .flybox1 {
+            margin-right: 31px;
+        }
+
+        .flymeimg {
+            box-shadow: 2px 4px 6px #ccc;
+        }
+
+        .littefly {
+            box-shadow: 2px 4px 6px #ccc;
+        }
+
+        .hoverimg {
+            width: 286px;
+            height: 270px;
+            background: url(./img/hover0.png);
+            float: left;
+        }
+        .hoverimg:hover {
+            box-shadow: 2px 4px 6px #ccc;
+        }
+        .hoverlist {
+            /* width: 1024px; */
+            height: 270px;
+         
+         display: flex;
+         justify-content: space-around;
+        }

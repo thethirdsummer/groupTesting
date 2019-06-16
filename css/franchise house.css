@@ -1,0 +1,48 @@
+#meizu-header-container {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 999;
+}
+#meizu-header-container, #meizu-footer {
+    display: block;
+}
+#meizu-header-container .meizu-header {
+    font-size: 14px;
+    position: relative;
+}
+#meizu-header-container .meizu-header-wrap-1240 {
+    width: 1240px;
+    margin: 0 auto;
+    position: relative;
+    *zoom: 1;
+}
+#meizu-header-container .meizu-header-wrap-1240:after, #meizu-header-container .meizu-header-wrap-1240:before {
+    content: "";
+    display: table;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+#meizu-header-cart.meizu-header-cart {
+    color: red;
+}
+#meizu-header-container a {
+    color: #515151;
+    text-decoration: none;
+}
+.meizu-header-cart {
+    position: relative;
+    float: right;
+    margin: 27px 0 0 8px;
+    width: 29px;
+    height: 29px;
+    background-image: url(//www3.res.meizu.com/static/cn/_partial/header/images/shopping-cart-gray_f0fb320.png);
+    background-image: -webkit-image-set(url(//www3.res.meizu.com/static/cn/_partial/header/images/shopping-cart-gray_f0fb320.png) 1x,url(//www3.res.meizu.com/static/cn/_partial/header/images/shopping-cart-gray@2x_6085b4f.png) 2x);
+    background-repeat: no-repeat;
+    text-align: center;
+    font-size: 12px;
+    text-indent: 3px;
+    line-height: 10px;
+    background-position-y: center;
+}
