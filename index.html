@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>魅族--追求不止，只因热爱</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Microsoft yahei";
+        }
+
+        body {
+            background: #f4f4f4;
+            font-family: Helvetica, Tahoma, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", STXihei, "Microsoft YaHei", SimHei, "WenQuanYi Micro Hei";
+        }
+
+        .bgmax {
+            width: 100%;
+            /* height: 760px; */
+            /* background: url("img/bg.jpg") center no-repeat; */
+            min-width: 1080px;
+        }
+
+        .top {
+            width: 100%;
+            height: 80px;
+            transition: 0.5s;
+            background-color: #ccc;
+            /* 过度效果 */
+        }
+
+        .nav {
+            width: 1080px;
+            height: 80px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            width: 112px;
+            height: 20px;
+            float: left;
+            margin: 30px 350px 0 20px;
+        }
+
+        .main li {
+            list-style: none;
+            float: left;
+        }
+
+        .main ul li a {
+            padding: 30px 23px;
+            color: #fff;
+            font-size: 14px;
+            text-decoration: none;
+            display: block;
+            /* letter-spacing: 1px; */
+        }
+
+        .login {
+            color: #fff;
+            width: 65px;
+            height: 15px;
+            float: right;
+            margin: 32px 20px 0 0;
+            font-size: 12px;
+        }
+
+        .login a {
+            line-height: 15px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .main ul li:hover a,
+        .login a:hover {
+            color: #31a5e7;
+        }
+
+        .hid {
+            width: 100%;
+            height: 0px;
+            position: absolute;
+            top: 80px;
+            left: 0px;
+            overflow: hidden;
+            transition: background .5s;
+            /* 动画过渡效果 */
+        }
+
+        .hid .mid {
+            width: 580px;
+            height: 150px;
+            margin: 0 auto;
+            padding-left: 500px;
+        }
+
+        .hid .mid img {
+            margin-right: 50px;
+            opacity: .5;
+        }
+
+        .hid .mid img:hover {
+            opacity: 1;
+        }
+
+        .bannerimg {
+            width: 100%;
+            height: 450px;
+            /* background-color: #000; */
+            background: url(./img/banner.jpg);
+            background-size: cover;
+            background-position-x: -595px;
+
+        }
+
+        .mainbox {
+            width: 100%;
+            height: 1947px;
+            /* background-color: #000; */
+        }
+
+        .containbox {
+            width: 1240px;
+            height: 1780px;
+            /* background-color: #FFF; */
+            margin: 0 92px;
+        }
+
+        .title {
+            width: 1240px;
+            height: 30px;
+            margin: 87px 0 25px;
+            font-weight: 100;
+
+        }
+
+        .leftThreebtn {
+            display: inline-block;
+            float: right;
+        }
+
+        .leftThreebtn a {
+            width: 50px;
+            height: 20px;
+            font-size: 16px;
+            text-decoration: none;
+            color: #000;
+
+        }
+
+        .leftThreebtn a:hover {
+            color: #31a5e7;
+        }
+
+        .goodslist {
+            width: 1240px;
+            height: 1200px;
+            /* background-color: #000; */
+        }
+
+        .goodslist ul li {
+            width: 400px;
+            height: 500px;
+            background-color: #fff;
+            float: left;
+            margin-left: 13px;
+            list-style: none;
+            margin-top: 20px;
+            padding: 40px 0 28px;
+        }
+
+        .goodslist ul li:hover {
+            box-shadow: 2px 4px 6px #ccc;
+        }
+
+        .goodslist ul li img {
+            width: 320px;
+            height: 320px;
+            margin: 0 40px;
+        }
+
+        .goodslist ul li h3 {
+            width: 400px;
+            height: 34px;
+            font-weight: normal;
+            padding: 0 12px;
+            text-align: center;
+            margin-top: 35px;
+            letter-spacing: 3px;
+        }
+
+        .goodslist ul li .desc {
+            color: #666666;
+            margin: 5px 0px;
+            font-size: 16px;
+            text-align: center;
+            /* margin-left: 30px; */
+        }
+
+        .price em {
+            font-style: normal;
+
+        }
+
+        .price {
+            margin-top: 15px;
+            text-align: center;
+            color: #c00;
+        }
+
+        .vm-price {
+            font-size: 23px;
+
+        }
+
+        .recommend {
+            width: 1240px;
+            height: 490px;
+            /* background-color: #000; */
+        }
+
+        .recommend h2 {
+            color: #333;
+            font-weight: 100;
+            margin: 90px 0 25px;
+        }
+
+        /* .recommend .bgli {
+            width: 1240px;
+            height: 430px;
+            background-color: #000;
+            list-style: none;
+            overflow: hidden;
+        }
+
+        .recommend ul li {
+            width: 1240px;
+            height: 430px;
+            background-color: pink;
+            list-style: none;
+            float: left;
+        } */
+
+        .bg {
+            width: 1240px;
+            height: 430px;
+            /* background-size: 1440px*690px; */
+            position: absolute;
+            -webkit-transition: opacity 2s linear;
+            -moz-transition: opacity 2s linear;
+            -o-transition: opacity 2s linear;
+            transition: opacity 2s linear;
+            opacity: 0;
+        }
+
+        #bg1 {
+            width: 1240px;
+            height: 430px;
+            background: url(./img/ul1.png);
+            background-size: cover
+        }
+
+        #bg2 {
+            width: 1240px;
+            height: 430px;
+            background: url(./img/ul2.png);
+            background-size: cover
+        }
+
+        #bg3 {
+            width: 1240px;
+            height: 430px;
+            background: url(./img/ul3.png);
+            background-size: cover
+        }
+
+        .fadein {
+            opacity: 100;
+            filter: alpha(opacity=100);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bgmax">
+        <div class="top">
+            <div class="nav">
+                <div class="logo"><img src="img/logo.png" alt=""></div>
+                <div class="main">
+                    <ul>
+                        <li><a href="#">在线商城</a></li>
+                        <li class="l2"><a href="#">产品</a>
+                            <div class="hid">
+                                <div class="mid">
+                                    <img src="img/mx4.png">
+                                    <img src="img/mx3.png">
+                                    <img src="img/mx4pro.png">
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">专卖店</a></li>
+                        <li><a href="#">Flyme</a></li>
+                        <li><a href="#">服务</a></li>
+                        <li><a href="#">社区</a></li>
+                    </ul>
+                </div>
+                <div class="login">
+                    <a href="#">登录</a>|<a href="#">注册</a>
+                </div>
+            </div>
+        </div>
+        <div class="bannerimg"></div>
+        <div class="mainbox">
+            <div class="containbox">
+                <h1 class="title">
+                    <span id="title-category">生活周边</span>
+                    <div class="leftThreebtn">
+                        <a href="" style="color:#31a5e7;">推荐</a>
+                        <a href="">新品</a>
+                        <a href="">价格</a>
+                    </div>
+                </h1>
+                <div class="goodslist">
+                    <ul>
+                        <li><img src="./img/li1.jpg" alt="">
+                            <h3>魅族极简都市双肩包</h3>
+                            <p class="desc">650D高耐磨牛津布 大容量多功能收纳</p>
+                            <p class="price"><em>￥</em><span class="vm-price">179</span></p>
+                        </li>
+                        <li>
+                            <img src="./img/li2.jpg" alt="">
+                            <h3>魅族极简都市双肩包</h3>
+                            <p class="desc">650D高耐磨牛津布 大容量多功能收纳</p>
+                            <p class="price"><em>￥</em><span class="vm-price">179</span></p>
+                        </li>
+                        <li>
+                            <img src="./img/li3.jpg" alt="">
+                            <h3>魅族极简都市双肩包</h3>
+                            <p class="desc">650D高耐磨牛津布 大容量多功能收纳</p>
+                            <p class="price"><em>￥</em><span class="vm-price">179</span></p>
+                        </li>
+                        <li>
+                            <img src="./img/li3.jpg" alt="">
+                            <h3>魅族极简都市双肩包</h3>
+                            <p class="desc">650D高耐磨牛津布 大容量多功能收纳</p>
+                            <p class="price"><em>￥</em><span class="vm-price">179</span></p>
+                        </li>
+                        <li>
+                            <img src="./img/li1.jpg" alt="">
+                            <h3>魅族极简都市双肩包</h3>
+                            <p class="desc">650D高耐磨牛津布 大容量多功能收纳</p>
+                            <p class="price"><em>￥</em><span class="vm-price">179</span></p>
+                        </li>
+                        <li>
+                            <img src="./img/li2.jpg" alt="">
+                            <h3>魅族极简都市双肩包</h3>
+                            <p class="desc">650D高耐磨牛津布 大容量多功能收纳</p>
+                            <p class="price"><em>￥</em><span class="vm-price">179</span></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="recommend">
+                    <h2>为您推荐</h2>
+                    <div class="bgli" id="bgli">
+                        <div id="bg1" class="bg fadein"></div>
+                        <div id="bg2" class="bg"></div>
+                        <div id="bg3" class="bg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script>
+        $(".l2").hover(function () {
+            $(".hid").stop(true).animate({ height: "150px" }, 300);
+            $(".top").attr("style", "background:#fff;");
+            $(".hid").attr("style", "background:#fff;");
+            $(".nav a").attr("color", "color:#000;");
+            $(".logo img").attr("src", "img/logo2.png");
+        }, function () {
+            $(".hid").stop(true).animate({ height: "0px" }, 300, function () {
+                $(".top").css("background", "");
+                $(".hid").css("background", "");
+                $(".nav a").removeAttr("style");
+                $(".logo img").attr("src", "img/logo.png");
+            });
+
+
+        })
+
+
+        // 替换class达到淡入淡出的效果
+        function fadeIn(e) {
+            e.className = "bg fadein"
+        };
+
+        function fadeOut(e) {
+            e.className = "bg"
+        };
+        //申明图片数组中当前的轮播图片
+        //    ;
+        cur_img = document.getElementById("bgli").children.length - 1;
+
+        //图片轮播函数
+        function turnImgs(imgs) {
+
+
+            var imgs = document.getElementById("bgli").children;
+            if (cur_img == 0) {
+                fadeOut(imgs[cur_img]);
+                cur_img = imgs.length - 1;
+                fadeIn(imgs[cur_img]);
+            } else {
+                fadeOut(imgs[cur_img]);
+                fadeIn(imgs[cur_img - 1]);
+                cur_img--;
+            }
+        }
+        //设置轮播间隔
+        setInterval(turnImgs, 3000);
+
+    </script>
+</body>
+
+</html>
