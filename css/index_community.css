@@ -70,7 +70,7 @@ body {
     position: relative;
     margin: 0 auto;
     width: 1250px;
-    height: 80px;
+    height: 70px;
     border: 0px solid black;
 }
 .bbs-nav{
@@ -112,14 +112,78 @@ body {
 .bbs-nav .bbs-menu li{
 	display: inline-block;
 }
+.bbs-menu-i:hover .bbs-all-menu{
+	display: block;
+}
+.bbs-all-menu{
+	border: 0px solid red;
+	position: absolute;
+	z-index: 999999;
+	background: #FFFFFF;
+	margin-top: 35px;
+	margin-left: -180px; 
+	width: 410px;
+	display: none;
+}
+.all-menu-arrow {
+    position: absolute;
+    left: 195px;
+    top: -14px;
+    width: 20px;
+    height: 14px;
+    background: url(../img/bbs-menu/all-menu-arrow.png) no-repeat 0 0;
+    border: 0px solid red;
 
+}
+
+.menu-item dt {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    color: #333;
+}
+.menu-item dd{
+	float: left;
+    height: 30px;
+    line-height: 30px;
+    color: #333;
+}
+.menu-item dt {
+    width: 13%;
+    font-size: 14px;
+    background: url(../img/bbs-menu/all-menu-s.png)no-repeat 50px 12px;
+    border: 0px solid red;
+}
+.menu-item dd {
+	margin-left: 10px;
+    width: 82%;
+    padding-bottom: 15px;
+    border: 0px solid red;
+}
+.bbs-menu li .bbs-all-menu .menu-item  a {
+    display: inline-block;
+    font-size: 12px;
+    border: 0px solid blue;
+    float: left;
+}
+.bbs-menu li .bbs-all-menu .menu-item  a:hover{
+	color: #999999;
+}
 .nav-wrap #nv li a {
     margin: 0 12px;
     padding: 0 6px;
 }
+.bbs-menu li{
+	border: 0px solid blue;
+	height: 45px;
+}
 .bbs-menu li a {
     color: #515151;
     font-size: 16px;
+    border: 0px solid blue;
+}
+.bbs-menu li a:hover{
+	color: #00C3F5;
 }
 .search-wrap {
     float: right;
@@ -506,6 +570,9 @@ a.alink {
     display: inline-block;
     
 }
+.icon-calendar:hover #calendar{
+	display: block;
+}
 .mz-sign {
     margin-left: 4%;
     float: left;
@@ -685,7 +752,91 @@ a.alink {
 .xl ul li a:hover{
 	color: #999999;
 }
+.tagbox .tag_tags {
+    background-color: #fff;
+    margin-bottom: 15px;
 
+
+}
+.tagbox .tag_tags .tg {
+    float: left;
+    width: 151px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    color: #222;
+    cursor: pointer;
+    border-bottom: 1px solid #e6e6e6;
+}
+.index_right .column_r7 .tagbox .tag_tags .tg:hover {
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #e6e6e6;
+    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    color: #32a5e7;
+}
+
+.cr {
+    display: block;
+    float: none;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+    clear: both;
+    visibility: hidden;
+}
+.index_right .column_r7 .tagbox .tag_main, .tagbox2 .tag_tags {
+    background-color: #fff;
+}
+.dxb_bc ul li{
+	border: 0px solid red;
+}
+.dxb_bc ul li dl{
+	padding: 0;
+	margin: 0;
+}
+
+.xcl dt{
+	font-size: 14px;
+    color: #222222;
+    font-weight: bold;
+    line-height: 24px;
+    padding: 2px 0px;
+}
+.firmware_li {
+    float: left;
+    font-size: 14px;
+    margin-right: 20px;
+}
+li.firmware_li em {
+    padding: 0;
+    margin: 0;
+    float: left;
+    color: #32a5e7!important;
+}
+li.firmware_li .arrow_2 {
+    display: inline-block;
+    margin: 6px 0 0 5px;
+    *margin-top: 6px;
+    width: 10px;
+    height:9px;
+    background: url(../img/main_icon.gif) no-repeat ;
+    background-position: 0% 12%;
+
+}
+.firmware_download {
+    border-radius: 1px;
+    background-color: #32a5e7;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    margin: 8px 0 0;
+    width: 300px;
+}
 /**footer**/
 #mz-footer{
 	border: 0px solid black;
