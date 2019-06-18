@@ -284,6 +284,7 @@ button#scbar_btn {
 .index_left {
     width: 660px;
     float: left;
+   
 }
 .box1{
 	height: 308px;
@@ -842,6 +843,9 @@ li.firmware_li .arrow_2 {
 	border: 0px solid black;
 	width: 1250px;
 	background: #fff;
+	position: absolute;
+	margin-bottom: 0;
+	
 }
 .mz-footer-link{	
 	padding: 18px 0 20px;
