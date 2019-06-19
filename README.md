@@ -5,7 +5,7 @@ jxau 16级 第八组
 组长: 
   罗智麟  Threen9706
 组员: 
-<<<<<<< HEAD
+<<<<<<<<HEAD
   黎佳  twilightlime
   胡艺凡 HuyifanV
   刘倩倩 lqq123456
